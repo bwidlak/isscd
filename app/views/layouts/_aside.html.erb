@@ -1,0 +1,16 @@
+<aside class="col-sm-3 sidebar">
+  <div class="logo">
+    <%= logo %>
+  </div>
+  <div class="phone_number">
+    <h2><%= contact_number %></h2>
+  </div>
+
+  <nav>
+    <ul class="nav nav-sidebar">
+      <% @projects.each do |p| %>
+        <li><%= link_to p.title, p %></li>
+      <% end %>
+    </ul>
+  </nav>
+</aside>

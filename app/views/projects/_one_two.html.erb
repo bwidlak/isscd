@@ -1,0 +1,42 @@
+<section class="project-layout one-two">
+
+  <% if @project.images.present? %>
+    <article class="row first-row">
+      <div class="col-xs-12 nopadding">
+        <%= image_tag(@project.images.first.large_1024) %>
+        <div class="title-wrapper">
+          <div class="title-content">
+            <h2>Text over the image.</h2>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="row second-row">
+      <div class="col-xs-6 no-padding">
+        <%= image_tag(@project.images[1].large_1024) %>
+      </div>
+      <div class="col-xs-6 no-padding">
+        <%= image_tag(@project.images[2].large_1024) %>
+      </div>
+    </article>
+  <% end %>
+
+  <% if @project.descriptions.present? %>
+    <article class="row">
+      <div class="col-md-12">
+        <%= @project.descriptions.first.text.html_safe %>
+      </div>
+    </article>
+  <% end %>
+
+  <article class="row">
+    <div class="col-md-6">
+    <%= full_address %>
+    </div>
+    <div class="col-md-6">
+      X
+    </div>
+  </article>
+
+</section>

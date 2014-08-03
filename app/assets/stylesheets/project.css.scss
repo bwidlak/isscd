@@ -1,0 +1,29 @@
+.title-wrapper {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0,0,0,.5);
+  padding: 10px;
+
+  h2 {
+    color: white
+  }
+}
+
+.project-layout {
+  &.one-two {
+    .first-row {
+
+    }
+    .second-row {
+      .no-padding {
+        &:first-child {
+          padding-right: 0px;
+        }
+        &:last-child {
+          padding-left: 0px;
+        }
+      }
+
+    }
+  }
+}
