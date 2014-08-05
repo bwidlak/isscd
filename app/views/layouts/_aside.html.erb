@@ -1,16 +1,37 @@
-<aside class="col-sm-3 sidebar">
-  <div class="logo">
-    <%= logo %>
-  </div>
-  <div class="phone_number">
-    <h2><%= contact_number %></h2>
+<aside class="col-sm-0 col-md-3 sidebar">
+
+  <div class="logo visible-xs-block visible-sm-block">
+    <h1><p class="text-center">LOGO</p></h1>
   </div>
 
-  <nav>
-    <ul class="nav nav-sidebar">
-      <% @projects.each do |p| %>
-        <li><%= link_to p.title, p %></li>
-      <% end %>
-    </ul>
+  <div class="logo visible-md-block visible-lg-block">
+    <h1><p>LOGO</p></h1>
+  </div>
+
+  <div class="contact_number visible-xs-block visible-sm-block">
+    <h2><p class="text-center"><%= contact_number %></p></h2>
+  </div>
+
+  <div class="contact_number visible-md-block visible-lg-block">
+    <h2><p><%= contact_number %></p></h2>
+  </div>
+
+  <nav class="navbar" role="navigation">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-collapse">
+      <ul class="main-menu">
+        <% @projects.each do |p| %>
+          <li class="menu-item"><%= link_to p.title, p %></li>
+        <% end %>
+      </ul>
+    </div>
+
   </nav>
 </aside>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @admin_project.title %>
+</p>
+
+<p>
+  <strong>Permalink:</strong>
+  <%= @admin_project.permalink %>
+</p>
+
+<p>
+  <strong>Sequence:</strong>
+  <%= @admin_project.sequence %>
+</p>
+
+<p>
+  <strong>Published:</strong>
+  <%= @admin_project.published %>
+</p>
+
+<%= link_to 'Edit', edit_admin_project_path(@admin_project) %> |
+<%= link_to 'Back', admin_projects_path %>

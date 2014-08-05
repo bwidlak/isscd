@@ -9,21 +9,23 @@
   }
 }
 
-.project-layout {
-  &.one-two {
-    .first-row {
+.image-center {
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-bottom: 60%;
+  width: 100%;
 
-    }
-    .second-row {
-      .no-padding {
-        &:first-child {
-          padding-right: 0px;
-        }
-        &:last-child {
-          padding-left: 0px;
-        }
-      }
+  .image-description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
 
+    h3, h4 {
+      margin-top: 10px;
     }
   }
 }

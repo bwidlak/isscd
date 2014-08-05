@@ -1,0 +1,31 @@
+<h1>Listing admin_projects</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Permalink</th>
+      <th>Sequence</th>
+      <th>Published</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @admin_projects.each do |admin_project| %>
+      <tr>
+        <td><%= admin_project.title %></td>
+        <td><%= admin_project.permalink %></td>
+        <td><%= admin_project.sequence %></td>
+        <td><%= admin_project.published %></td>
+        <td><%= link_to 'Show', admin_project %></td>
+        <td><%= link_to 'Edit', edit_admin_project_path(admin_project) %></td>
+        <td><%= link_to 'Destroy', admin_project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Project', new_admin_project_path %>

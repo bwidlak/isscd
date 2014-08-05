@@ -32,7 +32,6 @@ gem 'spring',        group: :development
 
 gem 'rspec-rails', group: [:development, :test]
 
-gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'devise'
 gem 'pg', group: :production
 

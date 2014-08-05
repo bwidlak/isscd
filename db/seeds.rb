@@ -4,10 +4,11 @@ Project.create( title: "Second shit Project", published: true )
 Project.create( title: "Wooohooo that is the fourth one", published: true )
 
 # Image
-Image.create( url: "http://localhost:3000/images/1/11974295393_1644b54c94.jpg")
-Image.create( url: "http://localhost:3000/images/2/8196182757_3495e6a39b.jpg")
-Image.create( url: "http://localhost:3000/images/3/400058695_b95dead511.jpg")
-Image.create( url: "http://localhost:3000/images/3/10689944404_9065a828de.jpg")
+Image.create( url: "https://farm6.staticflickr.com/5561/14828809152_fca3c59dd3_s.jpg")
+Image.create( url: "https://farm6.staticflickr.com/5592/14806186196_f9685a4859_s.jpg")
+Image.create( url: "http://localhost:3000/images/3/400058695_b95dead511_s.jpg")
+Image.create( url: "http://localhost:3000/images/3/10689944404_9065a828de_s.jpg")
+
 
 # description
 Description.create( text: '<h1>Bootstrap heading</h1>
