@@ -1,26 +1,27 @@
-<h1>Listing admin_projects</h1>
+<h2>Projects</h2>
 
-<table>
+<table class="table table-striped table-hover">
   <thead>
     <tr>
+      <th>#</th>
       <th>Title</th>
       <th>Permalink</th>
       <th>Sequence</th>
       <th>Published</th>
-      <th colspan="3"></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
   <tbody>
-    <% @admin_projects.each do |admin_project| %>
-      <tr>
-        <td><%= admin_project.title %></td>
-        <td><%= admin_project.permalink %></td>
-        <td><%= admin_project.sequence %></td>
-        <td><%= admin_project.published %></td>
-        <td><%= link_to 'Show', admin_project %></td>
-        <td><%= link_to 'Edit', edit_admin_project_path(admin_project) %></td>
-        <td><%= link_to 'Destroy', admin_project, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <% @admin_projects.each do |adm_pr| %>
+      <tr class=<%= "danger" unless adm_pr.published? %> >
+        <td><%= adm_pr.id %></td>
+        <td><%= link_to adm_pr.title, adm_pr %></td>
+        <td><%= adm_pr.permalink %></td>
+        <td><%= adm_pr.sequence %></td>
+        <td><%= adm_pr.published %></td>
+        <td><%= link_to 'Edit', edit_admin_project_path(adm_pr) %></td>
+        <td><%= link_to 'Destroy', adm_pr, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

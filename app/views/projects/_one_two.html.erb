@@ -21,7 +21,7 @@
         <% if @project.descriptions.present? %>
           <article class="row">
             <div class="col-md-12">
-              <%= @project.descriptions.first.text.html_safe %>
+              <%= dat_markdown(@project.descriptions.first.text) %>
             </div>
           </article>
         <% end %>
@@ -48,7 +48,7 @@
     <% if @project.descriptions.present? %>
       <article class="row">
         <div class="col-md-12 visible-md-block visible-lg-block">
-          <%= @project.descriptions.first.text.html_safe %>
+          <%= dat_markdown(@project.descriptions.first.text) %>
         </div>
       </article>
     <% end %>

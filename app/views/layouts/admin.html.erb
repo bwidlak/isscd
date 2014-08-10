@@ -11,6 +11,16 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-12">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class=<%= 'active' if controller.controller_name == 'projects' %> ><%= link_to 'Projects', admin_projects_path %></li>
+          <li class=<%= 'active' if controller.controller_name == 'images' %> ><%= link_to 'Images', admin_images_path %></li>
+          <li class=<%= 'active' if controller.controller_name == 'descriptions' %> ><%= link_to 'Descriptions', admin_descriptions_path %></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-12">
         <%= yield %>
       </div>
     </div>

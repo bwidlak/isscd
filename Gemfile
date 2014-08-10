@@ -33,6 +33,7 @@ gem 'spring',        group: :development
 gem 'rspec-rails', group: [:development, :test]
 
 gem 'devise'
+gem 'redcarpet'
 gem 'pg', group: :production
 
 # Use ActiveModel has_secure_password

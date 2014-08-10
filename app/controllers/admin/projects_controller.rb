@@ -1,7 +1,5 @@
-class Admin::ProjectsController < ApplicationController
-  before_action :set_admin_project, only: [:show, :edit, :update, :destroy]
-
-  layout "admin"
+class Admin::ProjectsController < AdminController
+  before_action :set_admin_project, only: [:show, :edit, :update, :destroy, :edit_multiple_images, :update_multiple_images, :edit_multiple_descriptions, :update_multiple_descriptions]
 
   # GET /admin/projects
   # GET /admin/projects.json
@@ -63,8 +61,31 @@ class Admin::ProjectsController < ApplicationController
     end
   end
 
+  def edit_multiple_images
+    @admin_images = Admin::Image.all
+  end
+
+  def update_multiple_images
+    @admin_project.update_assets(admin_project_assets_params.map(&:to_i), 'image')
+    redirect_to admin_project_path
+  end
+
+  def edit_multiple_descriptions
+    @admin_descriptions = Admin::Description.all
+  end
+
+  def update_multiple_descriptions
+    @admin_project.update_assets(admin_project_assets_params.map(&:to_i), 'description')
+    redirect_to admin_project_path
+  end
+
+  def descriptions
+    @available_descriptions = Admin::Project.all
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
+
     def set_admin_project
       @admin_project = Admin::Project.find_by_permalink(params[:id])
     end
@@ -72,5 +93,9 @@ class Admin::ProjectsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def admin_project_params
       params.require(:admin_project).permit(:title, :permalink, :sequence, :published)
+    end
+
+    def admin_project_assets_params
+      params.require(:project_assets)
     end
 end

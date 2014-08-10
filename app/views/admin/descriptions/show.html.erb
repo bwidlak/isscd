@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @admin_description.name %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= dat_markdown(@admin_description.text) %>
+</p>
+
+<%= link_to 'Edit', edit_admin_description_path(@admin_description) %> |
+<%= link_to 'Back', admin_descriptions_path %>
