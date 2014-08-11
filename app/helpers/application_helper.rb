@@ -23,5 +23,4 @@ module ApplicationHelper
     </h4>
     <h3>#{contact_number}</h3>".html_safe
   end
-
 end
