@@ -31,6 +31,7 @@
           <th>#</th>
           <th>Preview</th>
           <th>Name</th>
+          <th>Description</th>
         </tr>
       </thead>
 
@@ -40,6 +41,7 @@
             <td><%= link_to img.id, img %></td>
             <td><%= image_tag img.square_75x75 %></td>
             <td><%= img.name %></td>
+            <td><%= img.description %></td>
           </tr>
         <% end %>
       </tbody>

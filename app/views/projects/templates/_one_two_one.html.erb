@@ -4,17 +4,19 @@
 
     <article class="row">
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-12 image-center" style="background-image:url(<%= @project.images.all[0].medium_800 %>);">
-        <div class="image-description">
-          <h4>Image description</h4>
-          <h5>second</h5>
-        </div>
+        <% if @project.images.all[0].description.present? %>
+          <div class="image-description">
+            <%= dat_markdown(@project.images.all[0].description) %>
+          </div>
+        <% end %>
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6 image-center" style="background-image:url(<%= @project.images.all[1].medium_800 %>);">
-        <div class="image-description">
-          <h4>Image description</h4>
-          <h5>second</h5>
-        </div>
+        <% if @project.images.all[1].description.present? %>
+          <div class="image-description">
+            <%= dat_markdown(@project.images.all[1].description) %>
+          </div>
+        <% end %>
       </div>
 
       <div class="col-xs-12 visible-xs-block visible-sm-block">
@@ -28,17 +30,19 @@
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-6 image-center" style="background-image:url(<%= @project.images.all[2].medium_800 %>);">
-        <div class="image-description">
-          <h4>Image description</h4>
-          <h5>second</h5>
-        </div>
+        <% if @project.images.all[2].description.present? %>
+          <div class="image-description">
+            <%= dat_markdown(@project.images.all[2].description) %>
+          </div>
+        <% end %>
       </div>
 
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-12 image-center" style="background-image:url(<%= @project.images.all[3].medium_800 %>);">
-        <div class="image-description">
-          <h4>Image description</h4>
-          <h5>second</h5>
-        </div>
+        <% if @project.images.all[3].description.present? %>
+          <div class="image-description">
+            <%= dat_markdown(@project.images.all[3].description) %>
+          </div>
+        <% end %>
       </div>
 
     </article>

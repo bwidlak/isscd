@@ -1,1 +1,5 @@
-<%= render "/projects/templates/one_two_one" %>
+<% if @project.permalink == 'contact-us' %>
+  <%= render "/projects/templates/two_one_one_two" %>
+<% else %>
+  <%= render "/projects/templates/one_two_one" %>
+<% end %>
