@@ -11,7 +11,7 @@ module ApplicationHelper
   end
 
   def contact_number
-    "791.943.525"
+    "773.671.8833"
   end
 
   def full_address

@@ -89,14 +89,20 @@ Image.create( url: "https://farm4.staticflickr.com/3859/14885054421_4994d67264_s
 
 
 # description
-Description.create( text: "# Bootstrap heading
-##### Le Nouveau-Nord est situé à proximité de deux magnifiques terrains de golf, longeant la piste cyclable. Le 1400 Émile-Zola et Albert-Charpentier vous convient à une architecture Nouvelle-Angleterre vous offrant des condos de prestige à prix accessible. Un emplacement de rêve très convoité à Sherbrooke pour sa facilité d’accès et pour sa qualité de vie, deux critères rejoignant notre vision de l’habitation urbaine. Toutes nos unités offrent un confort et une qualité de design au-delà des standards.
-Le Nouveau-Nord est situé à proximité de deux magnifiques terrains de golf, longeant la piste cyclable. Le 1400 Émile-Zola et Albert-Charpentier vous convient à une architecture Nouvelle-Angleterre vous offrant des condos de prestige à prix accessible. Un emplacement de rêve très convoité à Sherbrooke pour sa facilité d’accès et pour sa qualité de vie, deux critères rejoignant notre vision de l’habitation urbaine. Toutes nos unités offrent un confort et une qualité de design au-delà des standards.
+Description.create( text: "# ISS Construction & Design
+### is focused on providing high-quality service and customer satisfaction - we will do everything we can, to meet your expectation.
+
+With a variety of offerings to choose from, we're sure you'll be happy working with us.
+
+We offer the highest quality in design and construction of new buildings, rebuilding and renovation of existing facilities. Our knowledge and experience enable the professional, fast and robust performance, work that is exceeding customers expectations.
 " )
 
 Description.create( text: "# Contact
-Blahh 1
-Blahhh 3
+**We create with passion**
+
+3607 West George St.  
+Chicago, IL 60618  
+773.671.8833
 " )
 
 # Asset Relation
