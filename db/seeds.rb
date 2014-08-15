@@ -20,7 +20,7 @@ Image.create( url: "https://farm4.staticflickr.com/3865/14701413410_3530314c5e_s
 Image.create( url: "https://farm6.staticflickr.com/5581/14865096516_8e235d0b00_s.jpg")
 Image.create( url: "https://farm6.staticflickr.com/5595/14865096246_0dfb0c8759_s.jpg")
 Image.create( url: "https://farm4.staticflickr.com/3903/14907948243_b6a2eec9fd_s.jpg")
-Image.create( url: "https://farm6.staticflickr.com/5559/14865095486_3be7345de1_s.jpg", description: "#### Framingx")
+Image.create( url: "https://farm6.staticflickr.com/5559/14865095486_3be7345de1_s.jpg", description: "#### Framings")
 Image.create( url: "https://farm6.staticflickr.com/5566/14701439519_cd348d0562_s.jpg", description: "#### Dining rooms")
 Image.create( url: "https://farm4.staticflickr.com/3882/14885032081_6142d16ce0_s.jpg")
 Image.create( url: "https://farm4.staticflickr.com/3905/14885630964_b190a5dc57_s.jpg")

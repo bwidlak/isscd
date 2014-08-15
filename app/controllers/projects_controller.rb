@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
 
   def index
-    @projects = Project.all
+    redirect_to action: :show, id: 'welcome'
   end
 
   def show

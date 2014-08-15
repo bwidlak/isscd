@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources :images
-  resources :projects
+  resources :projects, path: ''
 
-  root to: 'projects#show', id: 'welcome'
+  # root to: 'projects#show', id: 'welcome'
 end
