@@ -5,6 +5,7 @@ class CreateProjects < ActiveRecord::Migration
       t.string  :permalink
       t.integer :sequence
       t.boolean  :published, null: true
+      t.boolean  :parent, null: true
 
       t.timestamps
     end

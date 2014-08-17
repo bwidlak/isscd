@@ -3,6 +3,7 @@
 User.create( email: "admin@admin.com", password: 'test1234', password_confirmation: 'test1234')
 
 Project.create( title: "Welcome", published: true )
+Project.create( title: "Complex finishes", published: true )
 Project.create( title: "Contact us", published: true )
 
 # Image
@@ -112,8 +113,8 @@ Asset.create( project_id: 1, asset_id: 15, asset_type: 'image' )
 Asset.create( project_id: 1, asset_id: 39, asset_type: 'image' )
 Asset.create( project_id: 1, asset_id: 44, asset_type: 'image' )
 
-Asset.create( project_id: 2, asset_id: 2, asset_type: 'description' )
-Asset.create( project_id: 2, asset_id: 47, asset_type: 'image' )
-Asset.create( project_id: 2, asset_id: 75, asset_type: 'image' )
-Asset.create( project_id: 2, asset_id: 16, asset_type: 'image' )
-Asset.create( project_id: 2, asset_id: 30, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 2, asset_type: 'description' )
+Asset.create( project_id: 3, asset_id: 47, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 75, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 16, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 30, asset_type: 'image' )

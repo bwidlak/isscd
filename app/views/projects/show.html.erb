@@ -1,5 +1,7 @@
 <% if @project.permalink == 'contact-us' %>
   <%= render "/projects/templates/two_one_one_two" %>
+<% elsif @project.permalink == 'complex-finishes' %>
+  <%= render "/projects/templates/realizations" %>
 <% else %>
   <%= render "/projects/templates/one_two_one" %>
 <% end %>
