@@ -9,8 +9,12 @@ class Project < ActiveRecord::Base
             through: :assets
   has_many :images, -> { where assets: { asset_type: 'image' } },
             through: :assets
-
-  scope :published, -> { where(published: true)}
+  
+  belongs_to :parent, class_name: "Project", foreign_key: "project_id"
+  has_many :children, class_name: "Project", foreign_key: "project_id"
+  
+  scope :published, -> { where(published: true) }
+  scope :parent_only, -> { where(project_id: nil) }
 
   def to_param
     permalink

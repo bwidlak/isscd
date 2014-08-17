@@ -4,6 +4,7 @@ User.create( email: "admin@admin.com", password: 'test1234', password_confirmati
 
 Project.create( title: "Welcome", published: true )
 Project.create( title: "Complex finishes", published: true )
+Project.create( title: "4143 59th", published: true, project_id: 2 )
 Project.create( title: "Contact us", published: true )
 
 # Image
@@ -98,6 +99,9 @@ With a variety of offerings to choose from, we're sure you'll be happy working w
 We offer the highest quality in design and construction of new buildings, rebuilding and renovation of existing facilities. Our knowledge and experience enable the professional, fast and robust performance, work that is exceeding customers expectations.
 " )
 
+Description.create( text: "# Complex finishes
+" )
+
 Description.create( text: "# Contact
 **We create with passion**
 
@@ -113,8 +117,12 @@ Asset.create( project_id: 1, asset_id: 15, asset_type: 'image' )
 Asset.create( project_id: 1, asset_id: 39, asset_type: 'image' )
 Asset.create( project_id: 1, asset_id: 44, asset_type: 'image' )
 
-Asset.create( project_id: 3, asset_id: 2, asset_type: 'description' )
-Asset.create( project_id: 3, asset_id: 47, asset_type: 'image' )
-Asset.create( project_id: 3, asset_id: 75, asset_type: 'image' )
-Asset.create( project_id: 3, asset_id: 16, asset_type: 'image' )
-Asset.create( project_id: 3, asset_id: 30, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 2, asset_type: 'description' )
+Asset.create( project_id: 2, asset_id: 47, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 75, asset_type: 'image' )
+
+Asset.create( project_id: 4, asset_id: 3, asset_type: 'description' )
+Asset.create( project_id: 4, asset_id: 47, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 75, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 16, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 30, asset_type: 'image' )
