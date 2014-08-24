@@ -92,7 +92,7 @@ class Admin::ProjectsController < AdminController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def admin_project_params
-      params.require(:admin_project).permit(:title, :permalink, :sequence, :published)
+      params.require(:admin_project).permit(:title, :address, :permalink, :sequence, :published)
     end
 
     def admin_project_assets_params

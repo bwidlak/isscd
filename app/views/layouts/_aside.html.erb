@@ -27,11 +27,23 @@
 
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="main-menu">
-        <% @projects.each do |p| %>
+        <% @projects.parents_only.each do |p| %>
           <li class="menu-item">
             <%= link_to p, class: ("active" if @project == p) do %>
               <%= p.title %>
               <%= content_tag(:i, '', class: "fa fa-angle-double-right") if @project == p %>
+            <% end %>
+            <% if p.children.present? %>
+              <ul class="sub-menu">
+                <% p.children.each do |ch| %>
+                  <li class="menu-item">
+                    <%= link_to ch, class: ("active" if @project == ch) do %>
+                      <%= ch.title %>
+                      <%= content_tag(:i, '', class: "fa fa-angle-double-right") if @project == ch %>
+                    <% end %>
+                  </li>
+                <% end %>
+              </ul> 
             <% end %>
           </li>
         <% end %>

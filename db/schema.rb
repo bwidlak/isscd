@@ -38,6 +38,9 @@ ActiveRecord::Schema.define(version: 20140721195606) do
 
   create_table "projects", force: true do |t|
     t.string   "title"
+    t.string   "address"
+    t.float    "latitude"
+    t.float    "longitude"
     t.string   "permalink"
     t.integer  "sequence"
     t.integer  "project_id"

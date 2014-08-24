@@ -1,0 +1,103 @@
+<section class="project-layout one-two">
+
+  <div class="col-lg-12">
+
+    <article class="row">
+      <div class="col-lg-12 image-center" style="background-image:url(<%= @project.images.all[0].large_1024 %>);">
+        <% if @project.images.all[0].description.present? %>
+          <div class="image-description">
+            <%= dat_markdown(@project.images.all[0].description) %>
+          </div>
+        <% end %>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="col-lg-12">
+        <% if @project.descriptions.present? %>
+          <article class="row">
+            <div class="col-md-12 visible-md-block visible-lg-block">
+              <%= dat_markdown(@project.descriptions.first.text) %>
+            </div>
+          </article>
+        <% end %>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[1].medium_800 %>);">
+        <% if @project.images.all[1].description.present? %>
+          <div class="image-description">
+            <%= dat_markdown(@project.images.all[1].description) %>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[2].medium_800 %>);">
+        <% if @project.images.all[2].description.present? %>
+          <div class="image-description">
+            <%= dat_markdown(@project.images.all[2].description) %>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[3].medium_800 %>);">
+        <% if @project.images.all[3].description.present? %>
+          <div class="image-description">
+            <%= dat_markdown(@project.images.all[3].description) %>
+          </div>
+        <% end %>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="col-lg-12 map-center" id="map">
+        <% content_for :javascripts do %>
+          <script type='text/javascript'>
+            handler = Gmaps.build('Google');
+            handler.buildMap({
+                provider: {
+                  draggable: false,
+                  scrollwheel: false
+                },
+                internal: {id: 'map'}
+              }, function(){
+              markers = handler.addMarkers(<%=raw @hash.to_json %>);
+              handler.bounds.extendWith(markers);
+              handler.fitMapToBounds();
+              handler.getMap().setZoom(15);
+            });
+          </script>
+        <% end %>
+      </div>
+    </article>
+
+    <article class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[4].medium_800 %>);">
+        <% if @project.images.all[4].description.present? %>
+          <div class="image-description">
+            <%= dat_markdown(@project.images.all[4].description) %>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[5].medium_800 %>);">
+        <% if @project.images.all[5].description.present? %>
+          <div class="image-description">
+            <%= dat_markdown(@project.images.all[5].description) %>
+          </div>
+        <% end %>
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[6].medium_800 %>);">
+        <% if @project.images.all[6].description.present? %>
+          <div class="image-description">
+            <%= dat_markdown(@project.images.all[6].description) %>
+          </div>
+        <% end %>
+      </div>
+    </article>
+
+
+  </div>
+
+</section>
