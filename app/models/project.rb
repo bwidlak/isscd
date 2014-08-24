@@ -14,7 +14,7 @@ class Project < ActiveRecord::Base
   has_many :children, class_name: "Project", foreign_key: "project_id"
   
   scope :published, -> { where(published: true) }
-  scope :parent_only, -> { where(project_id: nil) }
+  scope :parents_only, -> { where(project_id: nil) }
 
   def to_param
     permalink

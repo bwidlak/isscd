@@ -21,12 +21,14 @@
       <%= f.text_field :title, class: 'form-control' %>
     </div>
   </div>
+
   <div class="form-group">
-    <%= f.label :description, class: "col-sm-2 control-label" %>
+    <%= f.label :address, class: "col-sm-2 control-label" %>
     <div class="col-sm-10">
-      <%= f.text_field :description, class: 'form-control' %>
+      <%= f.text_field :address, class: 'form-control' %>
     </div>
   </div>
+
   <div class="form-group">
     <%= f.label :permalink, class: "col-sm-2 control-label" %>
     <div class="col-sm-10">
@@ -37,17 +39,6 @@
     <%= f.label :sequence, class: "col-sm-2 control-label" %>
     <div class="col-sm-10">
       <%= f.number_field :sequence, class: 'form-control' %>
-    </div>
-  </div>
-
-  <div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-      <div class="checkbox">
-        <label>
-          <%= f.check_box :praten %>
-          Will have subcategories?
-        </label>
-      </div>
     </div>
   </div>
 

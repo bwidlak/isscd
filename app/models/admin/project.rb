@@ -1,5 +1,8 @@
 class Admin::Project < Project
 
+  geocoded_by :address
+  after_validation :geocode
+
   def update_assets(arr, type)
     current_assets_ids = current_assets(type).map(&:asset_id)
     add_assets(arr - current_assets_ids, type)

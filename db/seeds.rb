@@ -4,7 +4,8 @@ User.create( email: "admin@admin.com", password: 'test1234', password_confirmati
 
 Project.create( title: "Welcome", published: true )
 Project.create( title: "Complex finishes", published: true )
-Project.create( title: "4143 59th", published: true, project_id: 2 )
+Project.create( title: "4143 59th", address: "4143 59th, Chicago, Illinois", latitude: 41.7856, longitude: -87.7271, published: true, project_id: 2 )
+Project.create( title: "6614 Oconto", address: "6614 Oconto, Park Ridge, Illinois", latitude: 42.0013, longitude: -87.8083, published: true, project_id: 2 )
 Project.create( title: "Contact us", published: true )
 
 # Image
@@ -102,6 +103,12 @@ We offer the highest quality in design and construction of new buildings, rebuil
 Description.create( text: "# Complex finishes
 " )
 
+Description.create( text: "# 4143 59th, Chicago, Illinois
+" )
+
+Description.create( text: "# 6614 Oconto, Park Ridge, Illinois
+" )
+
 Description.create( text: "# Contact
 **We create with passion**
 
@@ -118,11 +125,62 @@ Asset.create( project_id: 1, asset_id: 39, asset_type: 'image' )
 Asset.create( project_id: 1, asset_id: 44, asset_type: 'image' )
 
 Asset.create( project_id: 2, asset_id: 2, asset_type: 'description' )
-Asset.create( project_id: 2, asset_id: 47, asset_type: 'image' )
-Asset.create( project_id: 2, asset_id: 75, asset_type: 'image' )
 
-Asset.create( project_id: 4, asset_id: 3, asset_type: 'description' )
+# 4143 59th, Chicago, Illinois
+Asset.create( project_id: 3, asset_id: 3, asset_type: 'description' )
+Asset.create( project_id: 3, asset_id: 4, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 16, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 20, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 15, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 9, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 10, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 24, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 29, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 25, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 27, asset_type: 'image' )
+
+
+# 6614 Oconto, Park Ridge, Illinois
+Asset.create( project_id: 4, asset_id: 4, asset_type: 'description' )
+#front
+Asset.create( project_id: 4, asset_id: 71, asset_type: 'image' )
+#general interior
+Asset.create( project_id: 4, asset_id: 42, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 40, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 39, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 37, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 45, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 46, asset_type: 'image' )
 Asset.create( project_id: 4, asset_id: 47, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 52, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 54, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 60, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 56, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 57, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 58, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 59, asset_type: 'image' )
+# lazienka
+Asset.create( project_id: 4, asset_id: 55, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 62, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 63, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 64, asset_type: 'image' )
+#sypialnia
+Asset.create( project_id: 4, asset_id: 65, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 68, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 69, asset_type: 'image' )
+
+#yard
 Asset.create( project_id: 4, asset_id: 75, asset_type: 'image' )
-Asset.create( project_id: 4, asset_id: 16, asset_type: 'image' )
-Asset.create( project_id: 4, asset_id: 30, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 73, asset_type: 'image' )
+Asset.create( project_id: 4, asset_id: 74, asset_type: 'image' )
+
+
+
+
+
+
+Asset.create( project_id: 5, asset_id: 5, asset_type: 'description' )
+Asset.create( project_id: 5, asset_id: 47, asset_type: 'image' )
+Asset.create( project_id: 5, asset_id: 75, asset_type: 'image' )
+Asset.create( project_id: 5, asset_id: 16, asset_type: 'image' )
+Asset.create( project_id: 5, asset_id: 30, asset_type: 'image' )
