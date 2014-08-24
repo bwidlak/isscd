@@ -40,6 +40,7 @@ ActiveRecord::Schema.define(version: 20140721195606) do
     t.string   "title"
     t.string   "permalink"
     t.integer  "sequence"
+    t.integer  "project_id"
     t.boolean  "published"
     t.datetime "created_at"
     t.datetime "updated_at"
