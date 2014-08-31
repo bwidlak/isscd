@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="main-menu">
         <% @projects.parents_only.each do |p| %>
-          <li class="menu-item <%= 'selected' if @project.parent == p || @project == p %>">
+          <li class="menu-item <%= 'selected' if (@project == p) %>">
             <%= link_to p, class: 'first-level' do %>
               <%= p.title %>
               &nbsp;
