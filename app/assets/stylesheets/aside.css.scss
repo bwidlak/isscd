@@ -23,28 +23,34 @@ aside {
     li.menu-item {
       margin: 0;
       border-bottom: 1px solid #d1d1d1;
-
       a {
         text-decoration: none;
         color: #555;
         display: block;
         padding: 20px 0;
         position: relative;
-        font-size: 1.5em;
         i {
           vertical-align: middle;
+        }
+      }
+
+      &.selected {
+        a.first-level {
+          font-family: "dinprobold";
         }
       }
 
       ul.sub-menu {
         list-style: none;
         li.menu-item {
-          border-bottom: 1px solid #d1d1d1;
-          &:last-child {
-           border-bottom: none
-          }
+          border: none;
           a {
-            font-size: 1em;
+            padding: 8px 0;
+          }
+          &.selected {
+            a.second-level {
+              font-family: "dinprobold";
+            }
           }
         }
       }

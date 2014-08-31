@@ -3,7 +3,7 @@ class ProjectsController < ApplicationController
   before_filter :load_project, :load_hash_for_google_maps, only: :show
 
   def index
-    redirect_to action: :show, id: 'welcome'
+    redirect_to action: :show, id: 'recent-projects'
   end
 
   def show

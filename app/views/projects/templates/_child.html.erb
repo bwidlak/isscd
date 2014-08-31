@@ -1,51 +1,26 @@
-<section class="project-layout one-two">
+<section>
 
   <div class="col-lg-12">
 
     <article class="row">
       <div class="col-lg-12 image-center" style="background-image:url(<%= @project.images.all[0].large_1024 %>);">
-        <% if @project.images.all[0].description.present? %>
-          <div class="image-description">
-            <%= dat_markdown(@project.images.all[0].description) %>
-          </div>
-        <% end %>
-      </div>
-    </article>
-
-    <article class="row">
-      <div class="col-lg-12">
         <% if @project.descriptions.present? %>
-          <article class="row">
-            <div class="col-md-12 visible-md-block visible-lg-block">
-              <%= dat_markdown(@project.descriptions.first.text) %>
-            </div>
-          </article>
+          <div class="image-description location">
+            <%= link_to '#map' do %>
+              <i class="fa fa-location-arrow"></i>
+              <%= @project.descriptions.first.text %>
+            <% end %>
+         </div>
         <% end %>
       </div>
     </article>
 
     <article class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[1].medium_800 %>);">
-        <% if @project.images.all[1].description.present? %>
-          <div class="image-description">
-            <%= dat_markdown(@project.images.all[1].description) %>
-          </div>
-        <% end %>
+      <div class="col-xs-12 col-sm-6 col-md-4 image-center" style="background-image:url(<%= @project.images.all[1].medium_800 %>);">
       </div>
-
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[2].medium_800 %>);">
-        <% if @project.images.all[2].description.present? %>
-          <div class="image-description">
-            <%= dat_markdown(@project.images.all[2].description) %>
-          </div>
-        <% end %>
+      <div class="col-xs-12 col-sm-6 col-md-4 image-center" style="background-image:url(<%= @project.images.all[2].medium_800 %>);">
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[3].medium_800 %>);">
-        <% if @project.images.all[3].description.present? %>
-          <div class="image-description">
-            <%= dat_markdown(@project.images.all[3].description) %>
-          </div>
-        <% end %>
+      <div class="col-sm-12 col-md-4 image-center" style="background-image:url(<%= @project.images.all[3].medium_800 %>);">
       </div>
     </article>
 
@@ -72,31 +47,46 @@
     </article>
 
     <article class="row">
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[4].medium_800 %>);">
-        <% if @project.images.all[4].description.present? %>
-          <div class="image-description">
-            <%= dat_markdown(@project.images.all[4].description) %>
-          </div>
-        <% end %>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[4].medium_800 %>);">
       </div>
 
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[5].medium_800 %>);">
-        <% if @project.images.all[5].description.present? %>
-          <div class="image-description">
-            <%= dat_markdown(@project.images.all[5].description) %>
-          </div>
-        <% end %>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[5].medium_800 %>);">
       </div>
 
-      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[6].medium_800 %>);">
-        <% if @project.images.all[6].description.present? %>
-          <div class="image-description">
-            <%= dat_markdown(@project.images.all[6].description) %>
-          </div>
-        <% end %>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[6].medium_800 %>);">
       </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[7].medium_800 %>);">
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[8].medium_800 %>);">
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-12 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[9].medium_800 %>);">
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-12 col-lg-12 image-center" style="background-image:url(<%= @project.images.all[10].medium_800 %>);">
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-12 col-lg-6 image-center" style="background-image:url(<%= @project.images.all[11].medium_800 %>);">
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-12 col-lg-3 image-center" style="background-image:url(<%= @project.images.all[12].medium_800 %>);">
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-12 col-lg-3 image-center" style="background-image:url(<%= @project.images.all[13].medium_800 %>);">
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-12 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[14].medium_800 %>);">
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-12 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[15].medium_800 %>);">
+      </div>
+
+      <div class="col-xs-12 col-sm-6 col-md-12 col-lg-4 image-center" style="background-image:url(<%= @project.images.all[16].medium_800 %>);">
+      </div>
+
     </article>
-
 
   </div>
 

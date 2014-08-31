@@ -4,6 +4,4 @@
   <%= render "/projects/templates/child" %>
 <% elsif @project.children.present? %>
   <%= render "/projects/templates/parent" %>
-<% else %>
-  <%= render "/projects/templates/one_two_one" %>
 <% end %>

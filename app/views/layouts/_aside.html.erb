@@ -12,10 +12,6 @@
     <h2><p class="text-center"><%= contact_number %></p></h2>
   </div>
 
-  <div class="contact_number visible-md-block visible-lg-block">
-    <h2><p><%= contact_number %></p></h2>
-  </div>
-
   <nav class="navbar" role="navigation">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -28,19 +24,17 @@
     <div class="collapse navbar-collapse" id="navbar-collapse">
       <ul class="main-menu">
         <% @projects.parents_only.each do |p| %>
-          <li class="menu-item">
-            <%= link_to p, class: ("active" if @project == p) do %>
+          <li class="menu-item <%= 'selected' if @project.parent == p || @project == p %>">
+            <%= link_to p, class: 'first-level' do %>
               <%= p.title %>
-              <%= content_tag(:i, '', class: "fa fa-angle-double-right") if @project == p %>
+              &nbsp;
+              <%= content_tag(:i, '', class:"fa fa-caret-down") if p.children.present? %>
             <% end %>
             <% if p.children.present? %>
               <ul class="sub-menu">
                 <% p.children.each do |ch| %>
-                  <li class="menu-item">
-                    <%= link_to ch, class: ("active" if @project == ch) do %>
-                      <%= ch.title %>
-                      <%= content_tag(:i, '', class: "fa fa-angle-double-right") if @project == ch %>
-                    <% end %>
+                  <li class="menu-item <%= 'selected' if @project == ch %>">
+                    <%= link_to ch.title, ch, class: 'second-level' %>
                   </li>
                 <% end %>
               </ul> 
@@ -50,6 +44,10 @@
       </ul>
     </div>
   </nav>
+
+  <div class="contact_number visible-md-block visible-lg-block">
+    <h2><p><%= contact_number %></p></h2>
+  </div>
 
   <div class="socialmedias visible-md-block visible-lg-block">
     <i class="fa fa-facebook-square"></i>

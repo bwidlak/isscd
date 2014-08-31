@@ -31,7 +31,6 @@ ActiveRecord::Schema.define(version: 20140721195606) do
   create_table "images", force: true do |t|
     t.string   "name"
     t.string   "url"
-    t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

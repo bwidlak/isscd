@@ -18,5 +18,4 @@ Rails.application.routes.draw do
   resources :images
   resources :projects, path: ''
 
-  # root to: 'projects#show', id: 'welcome'
 end
