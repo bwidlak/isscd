@@ -56,7 +56,7 @@
       <tbody>
         <% @admin_project.images.each do |img| %>
           <tr>
-            <td><%= link_to img.id, img %></td>
+            <td><%= link_to img.id, admin_image_path(img) %></td>
             <td><%= image_tag img.square_75x75 %></td>
             <td><%= img.name %></td>
           </tr>
@@ -82,7 +82,7 @@
       <tbody>
         <% @admin_project.descriptions.each do |descr| %>
           <tr>
-            <td><%= descr.id %></td>
+            <td><%= link_to descr.id, admin_description_path(descr) %></td>
             <td><%= descr.name %></td>
             <td><%= link_to descr.text, admin_description_path(descr) %></td>
           </tr>
