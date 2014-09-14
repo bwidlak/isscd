@@ -4,7 +4,7 @@ class CreateAssets < ActiveRecord::Migration
       t.integer   :project_id
       t.integer   :asset_id
       t.string    :asset_type
-      t.integer   :main, default: false
+      t.boolean   :main, default: false
 
       t.timestamps
     end
