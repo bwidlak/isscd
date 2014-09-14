@@ -21,7 +21,7 @@ class Project < ActiveRecord::Base
   end
 
   def random_images
-    images.where(assets: {main: false})
+    images.where(assets: {main: false}).shuffle
   end
 
   def description
