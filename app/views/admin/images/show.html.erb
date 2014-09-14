@@ -7,7 +7,7 @@
 
 <p>
   <strong>Url:</strong>
-  <%= @admin_image.url %>
+  <%= link_to @admin_image.url, @admin_image.url, taget: 'blank' %>
 </p>
 
 <%= link_to 'Edit', edit_admin_image_path(@admin_image) %> |

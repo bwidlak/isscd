@@ -1,3 +1,30 @@
 // Place all the styles related to the Admin controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.admin-block-image {
+  display: block;
+  border: 1px solid #333;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 20%;
+  .id-number {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+    color: white;
+  }
+  .admin-file-name {
+    padding-top: 10px;
+    padding-right: 10px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+  }
+}

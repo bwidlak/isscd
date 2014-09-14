@@ -36,6 +36,8 @@ gem 'spring',        group: :development
 
 gem 'rspec-rails', group: [:development, :test]
 
+gem 'newrelic_rpm', group: :production
+
 gem 'devise'
 gem 'redcarpet'
 gem 'pg', group: :production
