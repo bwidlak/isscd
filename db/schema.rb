@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20140721195606) do
     t.integer  "project_id"
     t.integer  "asset_id"
     t.string   "asset_type"
+    t.integer  "main",       default: 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end

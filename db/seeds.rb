@@ -91,7 +91,7 @@ Image.create( url: "https://farm6.staticflickr.com/5555/14701447410_119cd149c5_s
 
 
 # description
-Description.create( text: "# ISS Construction & Design
+Description.create( text: "## ISS Construction & Design
 ### is focused on providing high-quality service and customer satisfaction - we will do everything we can, to meet your expectation.
 
 With a variety of offerings to choose from, we're sure you'll be happy working with us.
@@ -116,39 +116,39 @@ Asset.create( project_id: 1, asset_id: 1, asset_type: 'description' )
 # 6614 Oconto, Park Ridge, Illinois
 Asset.create( project_id: 2, asset_id: 2, asset_type: 'description' )
 #front
-Asset.create( project_id: 2, asset_id: 38, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 38, asset_type: 'image', main: 1 )
 # #general interior
-# Asset.create( project_id: 2, asset_id: 42, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 40, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 39, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 37, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 45, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 46, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 47, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 52, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 54, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 60, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 56, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 57, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 58, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 59, asset_type: 'image' )
-# # lazienka
-# Asset.create( project_id: 2, asset_id: 55, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 62, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 63, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 64, asset_type: 'image' )
-# #sypialnia
-# Asset.create( project_id: 2, asset_id: 65, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 68, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 69, asset_type: 'image' )
-# #yard
-# Asset.create( project_id: 2, asset_id: 75, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 73, asset_type: 'image' )
-# Asset.create( project_id: 2, asset_id: 74, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 39, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 40, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 39, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 37, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 45, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 46, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 47, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 52, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 54, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 60, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 56, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 57, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 58, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 59, asset_type: 'image' )
+# lazienka
+Asset.create( project_id: 2, asset_id: 55, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 62, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 63, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 64, asset_type: 'image' )
+#sypialnia
+Asset.create( project_id: 2, asset_id: 65, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 68, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 69, asset_type: 'image' )
+#yard
+Asset.create( project_id: 2, asset_id: 75, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 73, asset_type: 'image' )
+Asset.create( project_id: 2, asset_id: 74, asset_type: 'image' )
 
 # 4143 59th, Chicago, Illinois
 Asset.create( project_id: 3, asset_id: 3, asset_type: 'description' )
-Asset.create( project_id: 3, asset_id: 4, asset_type: 'image' )
+Asset.create( project_id: 3, asset_id: 4, asset_type: 'image', main: 1 )
 Asset.create( project_id: 3, asset_id: 16, asset_type: 'image' )
 Asset.create( project_id: 3, asset_id: 20, asset_type: 'image' )
 Asset.create( project_id: 3, asset_id: 15, asset_type: 'image' )

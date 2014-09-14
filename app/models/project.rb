@@ -16,6 +16,18 @@ class Project < ActiveRecord::Base
   scope :published, -> { where(published: true) }
   scope :parents_only, -> { where(project_id: nil) }
 
+  def image
+    images.where(assets: {main: true}).take
+  end
+
+  def random_images
+    images.where(assets: {main: false})
+  end
+
+  def description
+    images.where(assets: {main: true}).take
+  end
+
   def to_param
     permalink
   end
