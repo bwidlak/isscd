@@ -116,7 +116,7 @@ Asset.create( project_id: 1, asset_id: 1, asset_type: 'description' )
 # 6614 Oconto, Park Ridge, Illinois
 Asset.create( project_id: 2, asset_id: 2, asset_type: 'description' )
 #front
-Asset.create( project_id: 2, asset_id: 38, asset_type: 'image', main: 1 )
+Asset.create( project_id: 2, asset_id: 38, asset_type: 'image', main: true )
 # #general interior
 Asset.create( project_id: 2, asset_id: 39, asset_type: 'image' )
 Asset.create( project_id: 2, asset_id: 40, asset_type: 'image' )
@@ -148,7 +148,7 @@ Asset.create( project_id: 2, asset_id: 74, asset_type: 'image' )
 
 # 4143 59th, Chicago, Illinois
 Asset.create( project_id: 3, asset_id: 3, asset_type: 'description' )
-Asset.create( project_id: 3, asset_id: 4, asset_type: 'image', main: 1 )
+Asset.create( project_id: 3, asset_id: 4, asset_type: 'image', main: true )
 Asset.create( project_id: 3, asset_id: 16, asset_type: 'image' )
 Asset.create( project_id: 3, asset_id: 20, asset_type: 'image' )
 Asset.create( project_id: 3, asset_id: 15, asset_type: 'image' )
